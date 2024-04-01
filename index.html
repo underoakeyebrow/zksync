@@ -57,7 +57,99 @@
     <h1>Crypto Airdrop Claim</h1>
     <p>Fill out the form below to claim your crypto airdrop.</p>
     <form>
-      <label for="name">EVM wallet adrres:</label>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <input type="submit" value="Claim Airdrop">
+    </form>
+  </div>
+</body>
+</html>
+This HTML code creates a basic web page with a form for users to claim a crypto airdrop. The color scheme is predominantly purple, with shades of purple used for headings and form elements. Feel free to customize it further to suit your needs!
+
+
+
+
+User
+add label in rigt upper coner
+ChatGPT
+To add a label in the top-right corner, you can use absolute positioning within a container that has relative positioning. Here's the modified HTML code with the label added:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Airdrop Claim</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      position: relative; /* Make the body relative for absolute positioning */
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f0f0f5;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      position: relative; /* Ensure the container is relative for absolute positioning */
+    }
+    .label {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #673ab7;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    h1 {
+      color: #673ab7;
+      text-align: center;
+    }
+    p {
+      color: #333;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #673ab7;
+    }
+    input[type="text"], input[type="email"], input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #673ab7;
+      color: #fff;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #5a2d91;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="label">New!</div> <!-- Add the label here -->
+    <h1>Crypto Airdrop Claim</h1>
+    <p>Fill out the form below to claim your crypto airdrop.</p>
+    <form>
+      <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
